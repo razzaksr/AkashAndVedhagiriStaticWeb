@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gmail Signup</title>
+</head>
+<body>
+    <h2>Create gmail account of yours</h2>
+
+    <form>
+        <input type="text" name="fname" placeholder="FirstName"/>
+        <input type="text" name="lname" placeholder="LastName"/><br/>
+        <input type="text" name="username" placeholder="username"/><br/>
+        <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"><p>Use my current email address instead</p></a>
+        <br/>
+        <input type="password" name="pass" placeholder="Password" />
+        <input type="password" name="confirmPass" placeholder="Confirm" />
+        <br/>
+        <input type="checkbox" name="show" value="enable" />Show Password
+        <br/>
+        <a href="https://www.google.com">Signin instead</a>
+        <button> Next </button>
+        
+        <select name="purpose">
+            <option>Select for what your creating an account</option>
+            <option>Student</option><option>Profession</option>
+            <option>Enterprenour</option>
+        </select>
+
+        <input type="text" readonly value="hi there"/>
+    </form>
+
+</body>
+</html>
