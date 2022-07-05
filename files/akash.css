@@ -1,0 +1,27 @@
+body{
+    background-color: darkgrey;
+}
+
+table{
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    border: 5px;
+    border-style: dashed;
+    border-color: fuchsia;
+    box-shadow: 10px 10px 10px red;
+}
+
+td:hover{
+    background-color: black;
+    color: red;
+    font-size: 20px;
+}
+
+thead{
+    font-style: oblique;
+    background-color: aquamarine;
+    color: darkmagenta;
+}
