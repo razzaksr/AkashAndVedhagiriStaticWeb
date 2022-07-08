@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Chil{
+            constructor(){
+               this.compo=document.getElementById('b')
+            }
+    
+            open(){
+                //alert("Open called")
+                //var t=document.getElementById('b')
+                //alert(this.compo.innerHTML)
+                this.compo.style.backgroundColor='blue';
+                this.compo.style.color='white';
+            }
+
+            sayClick(){
+                this.compo.style.backgroundColor='green';
+                this.compo.style.color='red';
+            }
+
+            sayHover(){
+                this.compo.style.backgroundColor='yellow';
+                this.compo.style.color='green';
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <button id="b" onclick="l.sayClick()" onmouseenter="l.sayHover()" onmouseleave="l.open()">hi</button>
+    <script>
+        var l=new Chil();
+        l.open()
+    </script>
+</body>
+</html>
