@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./files/house.js"></script>
+</head>
+<body>
+    <script>
+        var w=new Warehouse()
+    </script>
+    <input type="text" id="elem" placeholder="enter the data to array"/>
+    <button onclick="w.insert(document.getElementById('elem').value)">ADD</button>
+
+    <button onclick="w.traverse()">List All</button>
+    <button onclick="w.read(document.getElementById('elem').value)">Read One</button>
+    <button onclick="w.deleteByData(document.getElementById('elem').value)">Delete One Data</button>
+    <button onclick="w.deleteByPosition(document.getElementById('elem').value)">Delete One Position</button>
+</body>
+</html>
