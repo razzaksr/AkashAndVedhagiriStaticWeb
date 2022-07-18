@@ -54,7 +54,7 @@ class Dynamic{
             //content+="<td><button onclick='alert("+'+ele.model+'+")'>Delete</button></td>"
             //content+="<td><button onclick="+"alert('"+ele.model+"')>Delete</button></td>"
             //content+="<td><button onclick="+"alert('hai')"+">Delete</button></td>"
-            content+="<td><button onclick="+"this.delete('"+ind+"')"+">Delete</button></td>"
+            //content+="<td><button onclick="+"this.delete('"+ind+"')"+">Delete</button></td>"
             content+="</tr>"
         })
 
