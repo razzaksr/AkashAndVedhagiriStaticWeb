@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+    <script>
+        const valid=()=>{
+            var alpha=document.forms['just'].one.value;
+            var beta=document.forms['just'].two.value;
+
+            var tmp=true
+
+        //    if(alpha==""&&beta==""){
+        //        alert("invaid to procees")
+        //    }
+
+            if(alpha==""){
+                document.getElementById('err1').innerHTML="Number one shouldn't empty"
+                tmp=false
+            }
+            else if(!(/^[0-9]+$/).test(alpha)){
+                document.getElementById('err1').innerHTML="Number one is invalid"
+                tmp=false
+            }
+            if(beta==""){
+                document.getElementById('err2').innerHTML="Number two shouldn't empty"
+                tmp=false
+            }
+            else if(!(/^[0-9]+$/).test(beta)){
+                document.getElementById('err2').innerHTML="Number two is invalid"
+                tmp=false
+            }
+
+            if(tmp==true){
+                document.forms['just'].res.value=alpha*beta
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="post" name="just">
+        <input type="text" name="one" placeholder="Enter the number one" />
+        <p id="err1"></p>
+        <input type="text" name="two" placeholder="Enter the number two" />
+        <p id="err2"></p>
+        <input type="button" value="check" onclick="valid()"/>
+        <output name="res"/>
+    </form>
+</body>
+</html>
